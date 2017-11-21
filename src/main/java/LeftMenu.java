@@ -6,7 +6,7 @@ import org.junit.Assert;
 import java.util.concurrent.TimeUnit;
 
 
-public class Left_menu {
+public class LeftMenu {
 	private static WebDriver driver;
 
 	static {

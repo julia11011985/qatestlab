@@ -9,6 +9,7 @@ public class Login {
 		System.setProperty("webdriver.chrome.driver", "/Users/tester/Downloads/chromedriver_3");
 		driver = new ChromeDriver();
 	}
+
 	public static void main(String[] arg) throws InterruptedException {
 		driver.get("http://prestashop-automation.qatestlab.com.ua/admin147ajyvk0/");
 		driver.findElement(By.id("email")).sendKeys("webinar.test@gmail.com");
@@ -17,5 +18,5 @@ public class Login {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"employee_infos\"]/a/span")).click();
 		driver.findElement(By.id("header_logout")).click();
-		}
+	}
 }
